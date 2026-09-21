@@ -10,7 +10,7 @@ import collections
 import os, sys
 
 if sys.version_info > (3, 0):
-    from six.moves import xrange
+    xrange = range
 
 from bashlint import data_tools
 from nlp_tools import tokenizer

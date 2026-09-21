@@ -27,7 +27,7 @@ import os
 import re
 import sys
 if sys.version_info > (3, 0):
-    from six.moves import xrange
+    xrange = range
 
 # bash grammar
 from bashlint.grammar import *

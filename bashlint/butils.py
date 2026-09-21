@@ -1,6 +1,7 @@
 import collections
+import collections.abc
 
-class typedset(collections.MutableSet):
+class typedset(collections.abc.MutableSet):
     def __init__(self, type_, iterable=[]):
         self._s = set()
         self._type = type_
@@ -48,7 +49,7 @@ class typedset(collections.MutableSet):
     def __repr__(self):
         return self._s.__repr__()
 
-class frozendict(collections.Mapping):
+class frozendict(collections.abc.Mapping):
     def __init__(self, *args, **kwargs):
         self.__dict = dict(*args, **kwargs)
         self.__hash = None

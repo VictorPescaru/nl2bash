@@ -12,7 +12,7 @@ from __future__ import print_function
 
 import os, sys
 if sys.version_info > (3, 0):
-    from six.moves import xrange
+    xrange = range
 
 UTIL_S = 0
 COMPOUND_FLAG_S = 1

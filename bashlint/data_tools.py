@@ -10,7 +10,7 @@ from __future__ import print_function
 import sys
 
 if sys.version_info > (3, 0):
-    from six.moves import xrange
+    xrange = range
 
 from bashlint import bash, lint, nast
 
